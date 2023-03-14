@@ -1,0 +1,220 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkgrey;
+}
+
+header {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+.intros {
+  font-size: 18px;
+}
+
+li {
+  font-size: 20px;
+}
+
+.logomio {
+  width: 130px;
+  margin-right: 130rem;
+}
+
+.imgprincipal {
+  width: 470px;
+  width: 80%;
+  border-radius: 20px;
+}
+
+p {
+  font-size: 30px;
+}
+
+.imagen1 {
+  width: 70%;
+  border-radius: 20px;
+}
+
+.imagen2 {
+  width: 70%;
+  border-radius: 20px;
+}
+
+.imagen3 {
+  width: 70%;
+  border-radius: 20px;
+}
+
+.img_icons {
+  width: 50px;
+  margin-top: 50px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+.titulo2 {
+  text-align: center;
+}
+
+.form {
+  font-size: 20px;
+}
+
+.mail {
+  font-size: 15px;
+}
+
+.logomio3 {
+  width: 130px;
+}
+
+h1.dondeestas {
+  font-size: 20px;
+}
+
+.somos {
+  font-family: "Gloock", serif;
+  font-size: 30px;
+}
+
+.somos1 {
+  font-size: 45px;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "footer";
+}
+
+footer {
+  grid-area: footer;
+}
+
+.iconoq {
+  padding-left: 150px;
+}
+
+.meil {
+  padding-left: 50px;
+}
+
+@media screen and (min-width: 470px) {
+  #container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, 1fr);
+    grid-template-areas: "footer" "foter";
+  }
+  .iconoq {
+    margin-top: 10rem;
+  }
+  .meil {
+    padding-left: 50rem;
+    margin-bottom: 15rem;
+  }
+}
+img.foto {
+  width: 250px;
+  height: 150px;
+}
+
+img.foto {
+  transition: 0.5s;
+  border-radius: 20px;
+}
+
+img.foto:hover {
+  transform: scale(1.2);
+}
+
+.casorio {
+  width: 500px;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.casorio2 {
+  margin-top: 20px;
+  padding-right: 100px;
+  justify-content: center;
+}
+
+#eventos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "main";
+}
+
+main {
+  grid-area: main;
+}
+
+img .eventi {
+  width: 400px;
+}
+
+.evento {
+  justify-content: center;
+}
+
+h3 {
+  font-size: 20px;
+  padding-left: 100px;
+}
+
+h4 {
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 470px) {
+  #eventos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1fr);
+    grid-template-areas: "main" "main";
+  }
+}
+.eventi {
+  width: 500px;
+  width: 100%;
+  border-radius: 20px;
+  margin-right: 200px;
+}
+
+.evento {
+  margin-top: 50px;
+}
+
+.evento1 {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
