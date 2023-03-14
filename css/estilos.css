@@ -30,11 +30,15 @@ nav {
 
 li {
   font-size: 20px;
+  margin-left: 30px;
+  padding-left: 30px;
 }
 
 .logomio {
   width: 130px;
   margin-right: 130rem;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
 }
 
 .imgprincipal {
@@ -211,6 +215,7 @@ h4 {
 
 .evento {
   margin-top: 50px;
+  margin-left: 100px;
 }
 
 .evento1 {
