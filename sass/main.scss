@@ -1,11 +1,12 @@
-$zize_img: 300px;
+$zize_imagen: 300px;
 $zize_imag: 70%;
 $zize_logo: 130px;
 $font_intro: 30px;
-$font_contactos: 20px;
+$font_contactos: 10px;
 $font_servicios: 15px;
-
-
+$font_parafo: 25px;
+$font_servis: 18px;
+$bordes: 20px;
 
 html {
     font-size: 62.5%;
@@ -21,8 +22,7 @@ html {
   }    
   header {
     width: 100%;
-  }
-  
+  }  
   main {
     width: 100%;
   }
@@ -34,35 +34,34 @@ html {
     font-size: 20px;
     margin-left: 30px;
     padding-left: 30px;
-
   }
   .logomio {
-    width: 130px;
-    margin-right: 130rem;
+    width: 130px;   
     filter: brightness(1.1);
     mix-blend-mode: multiply;
-  }
-  
+  }  
   .imgprincipal {
     width: 470px;
     width: 80%;
-    border-radius: 20px;
-  }
-  
+    border-radius: $bordes;
+  }  
   p {
-    font-size: 30px;
+    font-size: $font_parafo;
   }
   .imagen1{
-    width: $zize_imag;
-    border-radius: 20px;    
+    width: 300px;
+    width: 50%;
+    border-radius: $bordes;    
   }
   .imagen2{
     width: $zize_imag;
-    border-radius: 20px;
+    width: 50%;
+    border-radius: $bordes;
   }
-  .imagen3{    
-    width: 70%;
-    border-radius: 20px;
+  .imagen3{ 
+    width: $zize_imagen; 
+    width: 50%;  
+    border-radius: $bordes;      
   }
 .img_icons{
   width: 50px;
@@ -70,9 +69,10 @@ html {
 }
 h3{
   font-size: $font_contactos;
+ padding-left: 50px;
 }
 h4{
-  font-size: $font_intro;
+  font-size: $font_servis;
 }
 h5{
   font-size: $font_servicios;
@@ -91,15 +91,16 @@ h5{
 .logomio3{width: $zize_logo;  
 }
 h1.dondeestas{
-  font-size: $font_contactos;
+  font-size:$font_servicios;
 }
 .somos{
   font-family: 'Gloock', serif;
-  font-size: 30px;
+  font-size: 20px;
 }
 .somos1{
-  font-size: 45px;
+  font-size: 35px;
 }
+
 #container {
   display: grid;
   grid-template-columns: 1fr;
@@ -120,7 +121,7 @@ footer{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr, 1fr);
     grid-template-areas:
-      "footer" "foter";
+      "footer" "footer";
   }
   .iconoq{
     margin-top: 10rem;
@@ -144,63 +145,71 @@ img.foto{
 img.foto:hover{
   transform: scale(1.20);
 }
+.taitel{
+  text-align: center;
+  font-family: 'Bona Nova', serif;
+  font-size: $font_intro;
+}
 // pagina Servicios
-.casorio{
-  width: 500px; 
-  margin-top: 20px;
+.contenedor{
+  height: auto;
   width: 100%;
-  border-radius: 20px;
-}
-.casorio2{
-  margin-top: 20px;
-  padding-right: 100px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-#eventos{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "main";
+
+  .pizzas{
+    margin-left: 50px;
+    width: $zize_imagen;
+    width: $zize_imag;
+    border-radius: $bordes; 
+    text-align: center;  
+   }
+   .chivito{
+    margin-left: 50px;
+    margin-top: 20px;
+    width: $zize_imagen;
+    width: $zize_imag;
+    border-radius: $bordes;
+    text-align: center;
   }
-  main{
-    grid-area: main;
+  .fiambres{
+    margin-left: 50px;
+    margin-top: 20px;
+    width: $zize_imagen;
+    width: $zize_imag;
+    border-radius: $bordes;
+    text-align: center;
   }
- 
-img .eventi{
-  width: 400px;
-}
-    
-  
-.evento{
-  justify-content: center;
-}
-h3{
-  font-size: 20px;
-  padding-left: 100px;
-}
-h4{
-  font-size: 18px;
-  padding-left: 20px;
-}
-@media screen and (min-width: 470px){
-  #eventos{
-    grid-template-columns: repeat(2,1fr) ;
-    grid-template-rows: repeat(1fr,);
-    grid-template-areas:
-      "main" "main";
+  .parrilla{
+    margin-left: 50px;
+    margin-top: 20px;
+    width: $zize_imagen;
+    width: $zize_imag;
+    border-radius: $bordes;
+    text-align: center;
   }
-}
-.eventi{ width: 500px;
-  width: 100%;
-  border-radius: 20px;   
-margin-right: 200px;
-}
-.evento{
-  margin-top: 50px;
-  margin-left: 100px;
-}
-.evento1{
-  margin-top: 20px;
- 
+  h1{
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 
+@media (max-width: 480px){
+  .parrilla, .fiambres, .chivito, .pizzas{
+    width: 100%;
+    margin-right: 50px;  
+    text-align: center;
+      
+    h1{
+      font-size: $font_servis;
+     text-align: center;
+     margin-top: 15px;
+      }
+      h2{
+        text-align: center;
+        font-size: $font_servicios;
+      }    
+  }
+}
